@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+}
+
+.container video {
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.overlay {
+  background: rgba(100,160,166,0.8);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-text {
+  display: flex-column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+ 	justify-content: center; 
+  align-items: center;
+  font-family: 'Montserrat';
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  color: white;
+ }
+
+.sub-heading {
+  justify-content: center; 
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: white;
+  list-style: none;
+  line-height: 1.5em;
+  padding: 10px;
+ }

@@ -1,0 +1,79 @@
+a {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+button {
+	background-color: rgba(0,0,0,0);
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 1px;
+	padding: 7px;
+	border-radius: 50px;
+}
+
+.github {
+	font-family: Consolas;
+	border: 1px;
+}
+
+.github:hover{
+	font-weight: bold;
+}
+
+.container-projects {
+	display: flex;
+	justify-content: space-around;
+	background-color: #B3A966;
+}
+
+.project {
+	flex: 1;
+	padding: 20px;
+	padding-bottom: 30px;
+	border-right: solid 1px #ffffff;
+}
+
+.project-contents {
+	display: flex-column;
+	justify-content: flex-start;
+}
+
+.project:hover {
+	background-color: #99925F;
+}
+
+.project-heading {
+ justify-content: center; 
+  align-items: center;
+  font-family: 'Montserrat';
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: .10em;
+  color: white;
+  padding: 0px;
+ }
+
+.project-sub-heading {
+  justify-content: center; 
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: white;
+  list-style: none;
+  line-height: 1.5em;
+ }
+
+@media screen and (max-width: 600px){
+  .container-projects {
+    flex-direction: column;
+  }
+  .project {
+  	border-bottom: solid 1px #ffffff;
+  }
+}
