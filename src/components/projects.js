@@ -16,7 +16,7 @@ class Projects extends Component {
                 <a href='https://ancient-plateau-51106.herokuapp.com/' className="project-contents">
                     <h1 className="project-heading">Book Finder</h1>
                     <h2 className="project-sub-heading">Discover new books for your baby, toddler or preschooler</h2>
-                    <button><a href="https://github.com/ewitmer/openow"  className="github">view on github</a></button>  
+                    <button><a href="https://github.com/ewitmer/book_suggestion"  className="github">view on github</a></button>  
                 </a>
         </div>
         <div className="project">
