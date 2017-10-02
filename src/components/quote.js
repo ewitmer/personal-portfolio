@@ -6,10 +6,9 @@ export default class Quote extends Component {
 	render() {
 		  return (
 		 	<div className="Image-container">
-			 	<div className="container Image-text">
-			 		<h6>It is often easier to ask for forgiveness than to ask for permission..</h6>
-			 		<p>-- Grace Hopper</p>
-		  		</div>
+			 	<h1>If it's a good idea, go ahead and do it.</h1>
+			 	<h1>It is much easier to apologize than it is to get permission.</h1>
+			 	<h2>--Grace Hopper</h2>
 			</div>
 		 )
 	}
