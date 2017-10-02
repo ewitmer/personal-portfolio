@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import video from '../assets/hero.mp4';
+import Copy from 'react-icons/lib/md/copyright'
+
+
 
 class Footer extends Component {
   render() {
     return (   
-    <div className="container-footer">
-        <div>
-            <h1><a href="https://www.linkedin.com/in/erinwitmer/">Contact Me</a></h1>
-        </div>
+    <div className="Footer-container">
+        <h2><Copy /> Erin Witmer</h2>
     </div>
     );
   }

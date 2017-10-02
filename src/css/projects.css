@@ -1,79 +1,72 @@
-a {
-	text-decoration: none;
-}
-a:visited {
-	text-decoration: none;
-	color: white;
-}
-
-button {
-	background-color: rgba(0,0,0,0);
-	border-color: #ffffff;
-	border-style: solid;
-	border-width: 1px;
-	padding: 7px;
-	border-radius: 50px;
-}
-
-.github {
-	font-family: Consolas;
-	border: 1px;
-}
-
-.github:hover{
-	font-weight: bold;
-}
-
-.container-projects {
+.Projects-container {
 	display: flex;
-	justify-content: space-around;
-	background-color: #B3A966;
+	background-color: #FBFBFF;
+	align-items: stretch;
 }
 
-.project {
-	flex: 1;
-	padding: 20px;
-	padding-bottom: 30px;
-	border-right: solid 1px #ffffff;
+.Projects-container a {
+	text-decoration: none;
+}
+
+.Projects-container a:visited {
+	text-decoration: none;
+	color: #0B4F6C;
 }
 
 .project-contents {
-	display: flex-column;
-	justify-content: flex-start;
+	flex: 1;
+	border-right: solid 1px #0B4F6C;
+	padding-bottom: 30px;
 }
 
-.project:hover {
-	background-color: #99925F;
+.project-contents:hover {
+	background-color: #F1F1F1;
 }
 
-.project-heading {
+.project-contents h1 {
  justify-content: center; 
   align-items: center;
-  font-family: 'Montserrat';
+  font-family: 'Oswald';
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: .10em;
-  color: white;
   padding: 0px;
  }
 
-.project-sub-heading {
+.project-contents h2 {
   justify-content: center; 
-  font-family: 'Montserrat';
+  font-family: 'Oswald';
   font-size: 14px;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: .1em;
-  color: white;
   list-style: none;
   line-height: 1.5em;
  }
 
+.github a{
+	font-family: Consolas;
+	border: 1px;
+	color: #149DBF;
+}
+
+.github a:hover{
+	font-weight: bold;
+	color: #149DBF;
+}
+
+.github a:visited{
+	color: #149DBF;
+}
+
+
+
+
 @media screen and (max-width: 600px){
-  .container-projects {
+  .Projects-container {
     flex-direction: column;
   }
-  .project {
-  	border-bottom: solid 1px #ffffff;
+  .project-contents {
+  	border-bottom: solid 1px #0B4F6C;
   }
 }
