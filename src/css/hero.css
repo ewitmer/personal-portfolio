@@ -1,47 +1,84 @@
-.container {
+.Hero-container {
   position: relative;
+  height: 100vh;
 }
 
-.container video {
+.Hero-container video {
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
   height: auto;
-  vertical-align: middle;
-  width: 100%;
+  z-index: -100;
 }
 
-.overlay {
-  background: rgba(100,160,166,0.8);
+.Hero-overlay {
+  background: rgba(11,79,108,.85);
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
-.overlay-text {
-  display: flex-column;
-  align-items: center;
-  justify-content: center;
-}
 
-.heading {
+.Hero-overlay h1 {
  	justify-content: center; 
   align-items: center;
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
   font-size: 3em;
   text-transform: uppercase;
-  letter-spacing: .18em;
+  letter-spacing: .1em;
   color: white;
  }
 
-.sub-heading {
+.Hero-overlay h2 {
   justify-content: center; 
-  font-family: 'Montserrat';
-  font-size: 16px;
+  font-family: 'Oswald';
+  font-size: 20px;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: .2em;
   color: white;
   list-style: none;
-  line-height: 1.5em;
   padding: 10px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3s steps(30, end),
+    blink-caret .75s step-end infinite;
  }
+
+.Hero-overlay a {
+  font-size: 30px;
+  padding: 2px 7px 7px 7px;
+  color: orange;
+}
+
+.Hero-overlay a:visited {
+  color: orange;
+}
+
+.Hero-overlay a:hover {
+  background-color: orange;
+  color: white;
+  border-radius: 50px;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 380px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
