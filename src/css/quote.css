@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   padding: 50px;
+  text-align: center; 
 }
 
 .Image-container h1 {
@@ -19,4 +20,19 @@
 .Image-container h2 {
   font-family: 'Homemade Apple', cursive;
   color: white;
+}
+
+
+@media only screen and (max-width: 720px) {
+  .Image-container {
+    padding: 20px;
+  }
+
+  .Image-container h1 {
+    font-size: 1em;
+  }
+
+  .Image-container h2 {
+    font-size: 1em;
+  }
 }

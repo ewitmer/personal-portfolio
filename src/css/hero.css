@@ -34,6 +34,7 @@
   text-transform: uppercase;
   letter-spacing: .1em;
   color: white;
+  text-align: center; 
  }
 
 .Hero-overlay h2 {
@@ -46,6 +47,7 @@
   color: white;
   list-style: none;
   padding: 10px;
+  text-align: center; 
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -81,4 +83,14 @@
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
+}
+
+@media only screen and (max-width: 720px) {
+  .Hero-overlay h1 {
+    font-size: 2em;
+  }
+
+  .Hero-overlay h2 {
+    font-size: 14px;
+  }
 }

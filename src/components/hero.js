@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import video from '../assets/hero.mp4';
-import { Link } from 'react-router';
 import Mail from 'react-icons/lib/md/mail-outline';
 import LinkedIn from 'react-icons/lib/fa/linkedin-square';
 import GitHub from 'react-icons/lib/go/mark-github'

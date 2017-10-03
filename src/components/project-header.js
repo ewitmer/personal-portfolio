@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import video from '../assets/hero.mp4';
 
 class ProjectHeader extends Component {
   render() {
