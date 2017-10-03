@@ -2,10 +2,12 @@
 	display: flex;
 	background-color: #FBFBFF;
 	align-items: stretch;
+	justify-content: center
 }
 
 .Projects-container a {
 	text-decoration: none;
+	color: #0B4F6C;
 }
 
 .Projects-container a:visited {
@@ -17,6 +19,8 @@
 	flex: 1;
 	border-right: solid 1px #0B4F6C;
 	padding-bottom: 30px;
+	padding-left: 30px;
+	justify-content: center;
 }
 
 .project-contents:hover {
@@ -44,8 +48,11 @@
   line-height: 1.5em;
  }
 
+.github a:visited{
+	color: #149DBF;
+}
 .github a{
-	font-family: Consolas;
+	font-family: 'Source Code Pro';
 	border: 1px;
 	color: #149DBF;
 }
@@ -55,9 +62,7 @@
 	color: #149DBF;
 }
 
-.github a:visited{
-	color: #149DBF;
-}
+
 
 
 
